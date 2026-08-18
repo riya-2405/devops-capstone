@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.demo.HelloControllerTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2026-08-18T07:50:44" hostname="DESKTOP-N8NN2BE" time="1.616">
+  <properties/>
+  <testcase name="statusEndpointReturnsUp()" classname="com.example.demo.HelloControllerTest" time="1.594"/>
+  <testcase name="helloEndpointReturnsOk()" classname="com.example.demo.HelloControllerTest" time="0.017"/>
+  <system-out><![CDATA[13:20:40.301 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.example.demo.HelloControllerTest]: HelloControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+13:20:40.569 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.example.demo.DemoApplication for test class com.example.demo.HelloControllerTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.4)
+
+2026-08-18T13:20:41.370+05:30  INFO 12980 --- [devops-capstone] [    Test worker] com.example.demo.HelloControllerTest     : Starting HelloControllerTest using Java 21.0.12 with PID 12980 (started by Dell in C:\Users\Dell\OneDrive\Desktop\devops-capstone\devops-capstone)
+2026-08-18T13:20:41.372+05:30  INFO 12980 --- [devops-capstone] [    Test worker] com.example.demo.HelloControllerTest     : No active profile set, falling back to 1 default profile: "default"
+2026-08-18T13:20:43.958+05:30  INFO 12980 --- [devops-capstone] [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-08-18T13:20:43.959+05:30  INFO 12980 --- [devops-capstone] [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-08-18T13:20:43.977+05:30  INFO 12980 --- [devops-capstone] [    Test worker] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoints beneath base path '/actuator'
+2026-08-18T13:20:43.991+05:30  INFO 12980 --- [devops-capstone] [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 29 ms
+2026-08-18T13:20:44.075+05:30  INFO 12980 --- [devops-capstone] [    Test worker] com.example.demo.HelloControllerTest     : Started HelloControllerTest in 3.187 seconds (process running for 5.364)
+]]></system-out>
+  <system-err><![CDATA[WARNING: A Java agent has been loaded dynamically (C:\Users\Dell\.gradle\caches\modules-2\files-2.1\net.bytebuddy\byte-buddy-agent\1.14.19\154da3a65b4f4a909d3e5bdec55d1b2b4cbb6ce1\byte-buddy-agent-1.14.19.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+]]></system-err>
+</testsuite>

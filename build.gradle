@@ -1,0 +1,46 @@
+plugins {
+    id 'java'
+    id 'org.springframework.boot' version '3.3.4'
+    id 'io.spring.dependency-management' version '1.1.6'
+}
+
+group = 'com.example'
+version = '1.0.0'
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(21)
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.springframework.boot:spring-boot-starter-actuator'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+}
+
+tasks.named('test') {
+    useJUnitPlatform()
+}
+
+// Custom Gradle task: prints build metadata.
+// Useful in CI logs to confirm exactly what was built and when.
+tasks.register('printBuildInfo') {
+    doLast {
+        println "=============================================="
+        println "Project     : ${project.name}"
+        println "Version     : ${project.version}"
+        println "Java target : ${java.toolchain.languageVersion.get()}"
+        println "Build time  : ${new Date()}"
+        println "=============================================="
+    }
+}
+
+// Make sure build info always prints before the actual build runs
+tasks.named('build') {
+    dependsOn 'printBuildInfo'
+}
